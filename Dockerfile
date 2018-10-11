@@ -1,10 +1,10 @@
 # boxedcode/alpine-nginx-php-fpm
 
-FROM alpine:3.7
+FROM alpine:latest
 MAINTAINER boxedcode <hello@boxedcode.com>
 
 # Set PHP version (allow it to be overridden at build time)
-ARG PHP_VER="7.1.20"
+ARG PHP_VER="7.2.11"
 
 # Environment variables
 ENV BUILD_PACKAGES="wget tar make gcc g++ zlib-dev libressl-dev pcre-dev fcgi-dev jpeg-dev libmcrypt-dev bzip2-dev curl-dev libpng-dev libxslt-dev postgresql-dev perl-dev file acl-dev libedit-dev icu-dev icu-libs" \
